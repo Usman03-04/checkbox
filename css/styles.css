@@ -22,6 +22,13 @@ body {
   line-height: 1.5;
   background-color: #fff;
   color: #222;
+  background-image: url(../images/Abstract\ background\ 09.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+
+
 }
 
 img {
@@ -83,6 +90,9 @@ select:-webkit-autofill:focus {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 110px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media
@@ -92,5 +102,88 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
+
+}
+
+.legend{
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.fieldset{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  padding-top: 40px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+  border: 3px solid rgba(255,255,255,.15);
+  box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+  backdrop-filter: blur(8px);
+
+
+
+}
+
+
+
+.label{
+  display: flex;
+  font-size: 40px;
+  line-height: 44px;
+
+}
+
+.label:not(:last-child){
+  margin-bottom: 10px;
+
+}
+
+.shown-checkbox{
+  width: 50px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+
+  border-radius: 5px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center center;
+  background-color: #fff , opacity 0.6;
+
+}
+
+.checkbox{
+
+}
+
+.checkbox:focus ~.shown-checkbox{
+  box-shadow: 0px 0px 0px 3px #0e85f3;
+}
+
+.checkbox-volleyball:checked ~ .shown-checkbox{
+  background-image: url("../images/icons8-volleyball-48.png");
+
+}
+
+.checkbox-stol-tennis:checked ~ .shown-checkbox{
+  background-image: url("../images/reshot-icon-ping-pong-trophy-E47YBV9LXW.svg");
+
+}
+
+.checkbox-football:checked ~ .shown-checkbox{
+  background-image: url("../images/icons8-football-64.png");
+
+}
+
+.checkbox-bascketball:checked ~ .shown-checkbox{
+  background-image: url("../images/reshot-icon-basketball-CBV348YJGM.svg");
+
+}
+
+.checkbox-ice-hokey:checked ~ .shown-checkbox{
+  background-image: url("../images/icons8-ice-hokey-64.png");
 
 }
